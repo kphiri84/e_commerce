@@ -1,0 +1,56 @@
+.valid {
+	border-color: green;
+}
+
+.invalid {
+	border-color: red;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	margin-top: 20px;
+}
+
+table input {
+	max-width: 60vw;
+	max-height: 5vh;
+	margin: 5px;
+}
+
+table tr {
+	height: 2vh;
+}
+
+.profile_page {
+	width: 150px;
+}
+
+.modif_button {
+	border: none;
+	outline: none;
+	background: #333;
+	color: white;
+	width: 100%;
+	height: 40px;
+	display: block;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 15px 0;
+}
+
+.entete {
+	font-weight: bold;
+	font-size: 18px;
+	color: #333;
+	height: 5px;
+}
+
+.valeur {
+	font-size: 16px;
+}
+
+input {
+	border-radius: 7px;
+}

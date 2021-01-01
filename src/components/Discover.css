@@ -1,0 +1,415 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+:root {
+	--Dark-Gray: hsl(0, 0%, 63%);
+	--Black: hsl(0, 0%, 0%);
+	--White: hsl(0, 0%, 100%);
+	--Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+.App {
+	min-height: 100vh;
+	background-color: hsl(0, 0%, 100%);
+	font-size: 12px;
+	font-family: "Spartan", sans-serif;
+	overflow: hidden;
+}
+
+.App-header {
+	color: hsl(0, 0%, 100%);
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 15vh;
+	padding: 0 3rem;
+	overflow: hidden;
+	position: absolute;
+	transition: all ease-in-out.3s;
+	z-index: 1000;
+}
+
+.test4{
+    height: 60vh;
+    width: 100%;
+}
+
+.App-header a {
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+}
+
+.App-header .App-logo {
+	font-size: 1.3rem;
+	font-weight: 600;
+	transition: all ease-in-out 0.3s;
+}
+.App-nav {
+	display: flex;
+	width: 100%;
+	transition: all ease-in-out 0.3s;
+}
+
+.App-content-menu {
+	padding-left: 3rem;
+}
+
+.App-content-menu li {
+	display: inline;
+	margin-right: 2rem;
+	padding-bottom: 0.5rem;
+	position: relative;
+}
+
+.App-content-menu li::after {
+	content: "";
+	border-bottom: 2px solid white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all ease-in-out 0.3s;
+	transform: scaleX(0);
+}
+.App-content-menu li:hover::after {
+	border-bottom: 2px solid white;
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+.content-mobile-nav {
+	position: relative;
+}
+
+.icon-close,
+.icon-hamburger {
+	cursor: pointer;
+	display: block;
+	opacity: 0;
+	position: absolute;
+}
+
+.App-section-hero {
+	height: 70vh;
+	position: relative;
+}
+
+.App-content-hero-inline {
+	display: flex;
+	width: 100%;
+	height: 60vh;
+	position: absolute;
+}
+
+.App-content-hero-inline.active {
+	z-index: 100;
+}
+
+.App-content-hero-inline.inactive {
+	z-index: 0;
+}
+
+.App-content-hero-img {
+	width: 60%;
+	height: 100%;
+	transition: all ease-in-out 0.3s;
+	position: absolute;
+}
+
+.App-content-hero-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.App-content-hero-text {
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+    right: 0;
+}
+
+.App-content-hero-img {
+	width: 60%;
+	height: 100%;
+	transition: all ease-in-out 0.3s;
+	position: absolute;
+}
+
+.content-hero-text {
+	height: 100%;
+	transition: all ease-in-out 0.3s;
+	position: relative;
+    z-index: 100;
+    padding: 2vh 2vw;
+}
+.overflow {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	height: 100%;
+}
+
+.App-content-about-text p,
+.App-content-hero-text p {
+	color: var(--Dark-Gray);
+	line-height: 1.8;
+	font-weight: 600;
+}
+
+.content-shop-now {
+	display: flex;
+	cursor: pointer;
+	margin-top: 1.5rem;
+}
+
+.content-shop-now:hover {
+	color: var(--Dark-Gray);
+}
+
+.shop-now {
+	display: block;
+	letter-spacing: 6px;
+}
+
+.icon-shop-now {
+	padding-left: 2.2rem;
+}
+.title-hero-text,
+.title-about-text {
+	color: var(--Black);
+	margin-bottom: 2vh;
+	font-weight: 600;
+}
+.title-hero-text {
+	font-size: calc(2vw + 1em);
+}
+
+.title-about-text {
+	font-size: calc(1vw + 0.5em);
+}
+
+.App-section-about {
+	display: flex;
+	width: 100%;
+	height: 30vh;
+}
+.App-content-about {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.App-content-about-img-left {
+	width: 30%;
+	height: 100%;
+}
+.App-content-about-img-left img,
+.App-content-about-img-right img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.App-content-about-text {
+	width: 40%;
+	height: 100%;
+	padding: 3rem 2rem;
+}
+
+.App-content-about-img-right {
+	width: 30%;
+	height: 100%;
+}
+
+.parent-content-button {
+	position: absolute;
+	z-index: 100;
+	width: 40%;
+	right: 0;
+	bottom: 0;
+}
+
+.content-action-button {
+	bottom: 0;
+	z-index: 100;
+}
+
+.svg-inline--fa{
+    vertical-align: 10px;
+}
+
+.action-button-left,
+.action-button-right {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+    padding: 1.5rem;
+    height: 56px;
+}
+
+.action-button-left:hover,
+.action-button-right:hover {
+	background-color:  #f08000;
+}
+.action-button-left:hover
+.svg-inline--fa.fa-w-8{
+	color: white;
+}
+
+.action-button-right:hover .svg-inline--fa.fa-w-8{
+	color: white;
+}
+
+.App-content-hero {
+	display: flex;
+	height: 100%;
+	transition: all ease-in-out 0.5s;
+}
+
+.App-content-hero-inline {
+	transition: all ease-in-out 0.3s;
+	opacity: 1;
+}
+
+.App-content-hero-inline.inactive {
+	opacity: 0;
+}
+
+.App-content-hero-inline.active {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+	.App-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.App-header a {
+		color: var(--Black);
+	}
+	.App-header::before {
+		content: "";
+		background-color: var(--White);
+		border-radius: 50%;
+		opacity: 1;
+		position: absolute;
+		left: 5vw;
+		width: 0px;
+		height: 0px;
+		transform-origin: top;
+		transition: all ease-in-out 0.3s;
+	}
+
+	.App-header.headeractive::before {
+		left: -5vw;
+		width: 400px;
+		height: 400px;
+	}
+
+	.App-logo {
+		position: absolute;
+	}
+	.App-logo.hide {
+		opacity: 0;
+	}
+	.App-nav {
+		opacity: 0;
+	}
+
+	.App-content-menu {
+		padding: 0;
+		padding-left: 2.5rem;
+	}
+	.App-content-menu ul {
+		display: flex;
+	}
+	.App-content-menu ul li {
+		padding-bottom: 0;
+	}
+	.App-nav.open {
+		opacity: 1;
+	}
+
+	.content-icon-mobile-nav {
+		position: absolute;
+		left: 5vw;
+		top: 2.5rem;
+	}
+	.icon-hamburger {
+		opacity: 1;
+		z-index: 100;
+	}
+	.icon-hamburger.inactive {
+		opacity: 0;
+	}
+	.icon-close.active {
+		opacity: 1;
+		z-index: 200;
+	}
+	.App-section-hero {
+		height: 100vh;
+	}
+
+	.App-content-hero-inline {
+		display: block;
+		position: relative;
+	}
+	.App-content-hero-img {
+		width: auto;
+		height: 50vh;
+	}
+
+	.App-content-hero-text {
+		width: auto;
+		height: 50vh;
+		position: absolute;
+		top: 50vh;
+	}
+
+	.parent-content-button {
+		width: auto;
+		height: 50vh;
+		top: 0;
+	}
+
+	.content-action-button {
+		display: flex;
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.action-button-left,
+	.action-button-right {
+		padding: 1.1rem;
+	}
+
+	.App-section-about {
+		height: auto;
+	}
+
+	.App-content-about {
+		display: block;
+	}
+
+	.App-content-about-img-left,
+	.App-content-about-img-right,
+	.App-content-about-text {
+		width: auto;
+	}
+
+	.overflow {
+		display: none;
+	}
+}

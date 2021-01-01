@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.homeImg {
+	height: 350px;
+	width: 100%;
+}
+
+.section{
+	overflow: hidden;
+}
+
+.homeImg2 {
+	height: 100%;
+	width: 100%;
+}
+
+.text {
+	font-family: "Roboto";
+	font-weight: 500;
+}
+.inactive {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+.arrowRight {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container {
+	max-width: 100% !important;
+}
+
+.carImg{
+	height: 70vh !important;
+	width: 100vw !important;
+}
+
+.col-lg-8,
+.col-lg-4,
+.col-lg-6,
+.col-lg-3,
+.col-lg-7,
+.col-lg-5 {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.section {
+	font-family: "Staatliches";
+	
+}
+
+.footer{
+    background-color: black !important;
+    height: 400px;
+}
+
+.carButton1{
+	margin-top: -50px;
+}

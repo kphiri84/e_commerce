@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.newsTitle{
+    text-align: center;
+    font-family: "Staatliches";
+}
+
+.card3{
+    display: flex;
+    justify-content: center;
+}
+.card33{
+    background-color:white;
+    padding: 20px;
+    color: #000;
+
+}
+.newsInput{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.tester{
+    justify-content: center;
+    display: flex;
+}
+
+.newsButton {
+	border: none;
+	outline: none;
+	background: #f08000;
+	color: white;
+	width: 100%;
+	height: 40px;
+	display: block;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 15px 0;
+	font-size: 15px;
+}
